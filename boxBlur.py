@@ -16,7 +16,7 @@ def boxBlur(image):
   for i in range(1, len(image) - 1):
     for j in range(1, len(image[i]) - 1):
       threeByThreeVals.append(
-        #determine values of 3x3 matrixes with image[i][j] at center
+        #determine values within 3x3 matrixes with image[i][j] at center
         [image[i - 1][j - 1], image[i - 1][j], image[i - 1][j + 1],
          image[i][j - 1], image[i][j], image[i][j + 1],
          image[i + 1][j - 1], image[i + 1][j], image[i + 1][j + 1]])
